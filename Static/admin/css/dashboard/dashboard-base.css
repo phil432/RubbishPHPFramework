@@ -22,8 +22,8 @@ div.user_settings_div {
 div.user_options_menu {
     position: absolute;
     right: 0;
+    margin-top: 50px;
     border-left: 2px solid black;
-    border-right: 2px solid black;
     border-bottom: 2px solid black;
     background-color: #1BF507;
 }
