@@ -1,0 +1,2 @@
+apt-get install curl
+curl -sS https://getcomposer.org/installer | php -- --install-dir=../

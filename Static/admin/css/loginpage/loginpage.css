@@ -1,0 +1,33 @@
+#login_credentials_box {
+    height:380px;
+    width: 700px;
+    margin:auto;
+    margin-top: 150px;
+}
+
+.credentials_table {
+    margin-left: 70px;
+    padding: 15px;
+}
+
+.login_button_div {
+    margin-top: 20px;
+}
+
+.credentials_div_container {
+    margin-top: 50px;
+}
+
+.forgot_password_div {
+    margin-top:50px;
+}
+
+.forgot_password_instructions {
+    max-width: 80%;
+}
+
+p.password_reset_feedback {
+    margin-top: 10px;
+    color:red;
+    font-weight: bold;
+}

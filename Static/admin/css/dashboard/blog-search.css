@@ -1,0 +1,121 @@
+#search_box {
+    width: 1520px;
+    padding: 10px;
+    margin: 0px;
+}
+
+#search_query_input {
+    height: 30px;
+    width: 1184px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: ‘Courier New’, Courier, monospace;
+    font-size: 20px;
+}
+
+.search_box_button {
+    height: 100px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: ‘Courier New’, Courier, monospace;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#search_options_table {
+    width: 1500px;
+}
+
+.search_option_label_cell {
+    width: 100px;
+}
+
+.search_option_cell {
+    width: 175px;
+}
+
+.search_option_date_range {
+    width: 150px;
+    margin-left: 10px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: ‘Courier New’, Courier, monospace;
+    font-size: 15px;
+}
+
+.no_error_border {
+    border: 1px solid black;
+}
+
+.error_border {
+    border: 1px solid red;
+}
+
+.error_text {
+    color: red;
+}
+
+#search_results_table {
+    width: 1540px;
+    background-color: #1BF507;
+}
+
+.search_result {
+    border-top: 1px solid grey;
+}
+
+.search_result_font_size {
+    font-size: 20px;
+}
+
+.result_title_width {
+    padding-left: 10px;
+    display: inline-block;
+    width: 1085px;
+}
+
+.result_title_width_header {
+    padding-left: 50px;
+    display: inline-block;
+    width: 1060px;
+}
+
+.result_created_width {
+    padding-left: 50px;
+    display: inline-block;
+    width: 250px;
+}
+
+.result_posted_width {
+    text-align: center;
+    padding-left: 5px;
+    display: inline-block;
+    width: 95px;
+}
+
+.view_short_desription_icon {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    height: 100%;
+}
+
+.short_description_preview {
+    background-color: #80F576;
+    word-wrap: break-word;
+    border-radius: 3px;
+    padding: 5px;
+    width: 1300px;
+    font-size: 15px;
+}
+
+.search_load_click {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    width: auto;
+}

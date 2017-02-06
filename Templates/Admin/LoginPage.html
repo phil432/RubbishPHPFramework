@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Login</title>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="/static-admin-css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/static-admin-css/loginpage/loginpage.css" />
+</head>
+
+<body class="non_gentle_background_colour">
+    <div class="thick_border rounded_corners gentle_background_colour" id="login_credentials_box">
+        <div class="nice_box_header_box_with_padding">
+            <h3 class="align_centre nice_header_font_size nice_font">Welcome. Enter your shit below to login.</h3>
+        </div>
+        <div class="credentials_div_container">
+            <form id="login_form">
+                <table class="credentials_table">
+                    <tr>
+                        <td>
+                            <p class="nice_label_font_size nice_font display_inline">Email</p>
+                        </td>
+                        <td>
+                            <input class="display_inline nice_input" type="text" name="u_name" id="u_name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="nice_label_font_size nice_font display_inline">Password</p>
+                        </td>
+                        <td>
+                            <input class="display_inline nice_input" type="password" name="p_word" id="p_word">
+                        </td>
+                    </tr>
+                </table>
+                <div class="align_centre login_button_div">
+                    <input type="submit" class="link_button nice_button align_centre display_inline" value="Login">
+                </div>
+            </form>
+            <div class="forgot_password_div align_centre">
+                <p class="nice_font">Forgot your credentials? Click
+                    <a href="/admin/password-reset">here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/static-admin-js/login-page.js"></script>
+    <script src="/static-admin-js/base.js"></script>
+</body>
+</html>

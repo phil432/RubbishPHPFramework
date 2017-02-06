@@ -1,0 +1,6 @@
+class Repository {
+
+    function fetchDatabaseConnectionFromPath() {
+        
+    }
+}

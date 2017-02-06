@@ -1,0 +1,64 @@
+<div>
+    <div id="search_box" class="thick_border rounded_corners">
+        <input id="search_query_input" class="display_inline" />
+        <div id="search_button" class="nice_button_colours display_inline link_button search_box_button">
+            Search...
+        </div>
+        <div id="more_options" class="nice_button_colours display_inline link_button search_box_button">
+            Show Options
+        </div>
+        <div id="options_table_container" class="do_not_display">
+            <table id="search_options_table">
+                <tr>
+                    <td class="search_option_label_cell">
+                        Published :
+                    </td>
+                    <td class="search_option_cell">
+                        <input id="published" type="checkbox" />
+                    </td>
+                    <td class="search_option_label_cell">
+                        Deep Search (takes longer) :
+                    </td>
+                    <td class="search_option_cell">
+                        <input id="deep_search" type="checkbox" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="search_option_label_cell">
+                        Published Date :
+                    </td>
+                    <td class="search_option_cell">
+                        From
+                        <input id="published_from" class="datepicker search_option_date_range no_error_border">
+                        To
+                        <input id="published_to" class="datepicker search_option_date_range no_error_border">
+                    </td>
+                    <td class="search_option_label_cell">
+                        Created Date :
+                    </td>
+                    <td class="search_option_cell">
+                        From
+                        <input id="created_from" class="datepicker search_option_date_range no_error_border">
+                        To
+                        <input id="created_to" class="datepicker search_option_date_range no_error_border">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="search_query_errors_box" class="do_not_display nice_font error_text">
+        </div>
+    </div>
+    <div id="search_results_table" class="do_not_display non_gentle_background_colour thick_border rounded_corners">
+        <div class="result_title_width_header nice_header_font_size nice_font">
+            Title
+        </div>
+        <div class="result_created_width nice_header_font_size nice_font">
+            Created
+        </div>
+        <div class="result_posted_width nice_header_font_size nice_font">
+            Posted
+        </div>
+        <div id="search_results_list">
+        </div>
+    </div>
+</div>

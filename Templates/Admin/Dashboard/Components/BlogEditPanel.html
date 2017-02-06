@@ -1,0 +1,64 @@
+<div>
+    <div class="blog-edit-header">
+        <div id="blog_id_tag" class="do_not_display">{{ id }}</div>
+        <div id="last_save_hash" class="do_not_display"></div>
+        <div id="save_status_tag" class="do_not_display">{{ save_status }}</div>
+        <textarea id="title_text_edit" class="lockable-text-input blog-title-input locked-input">{{ title }}</textarea>
+        <div id="show_blog_options" class="blog-title-options display_inline link_button">
+            <i id="options_arrow" class="material-icons show_more_icon">keyboard_arrow_down</i>
+            <p class="nice_header_font_size display_inline blog-title-options-text">Options</p>
+        </div>
+    </div>
+    <div id="blog_options" class="thick_border do_not_display">
+        <table>
+            <tr>
+                <td class="nice_font blog_option">
+                    Publish? :
+                </td>
+                <td class="blog_option">
+                    <input id="publish" class="nice_input " type="checkbox" value="{{ published }}"/>
+                </td>
+                <td class="nice_font blog_option">
+                    Publishing Date :
+                </td>
+                <td class="blog_option">
+                    <input id="publishing_date" class="datepicker blog_option_input" type="date"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="blog_option nice_font">
+                    Slug :
+                </td>
+                <td class="blog_option">
+                    <input id="slug" class="blog_option_input" value="{{ slug }}">
+                </td>
+                <td class="blog_option">
+                </td>
+                <td class="blog_option">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="blog-description-div">
+        <textarea id="blog_description_edit" name="blog_description" rows="5" cols="100" class="blog-description-textarea lockable-text-input thick_border nice_font">{{ short_description }}</textarea>
+    </div>
+    <div class="blog-contents">
+        <input id="media_upload" type="file" style="visibility: hidden;" />
+        <textarea id="ckeditor1" rows="10000" cols="100" name="ckeditor1" class="blog-contents-editor">{{ blog_text }}</textarea>
+    </div>
+</div>
+<div id="right_panel" class="rounded_corners">
+    <div id="save_blog" class="nice_button right_panel_option link_button">
+        <p class="nice_font">Save</p>
+    </div>
+    <div id="delete_blog" class="nice_button right_panel_option link_button">
+        <p class="nice_font">Delete</p>
+    </div>
+    <div id="save_status" class="no_save_status_colour nice_font nice_header_font_size thick_border rounded_corners">
+        No save status
+    </div>
+</div>
+
+<script type="text/javascript">
+    CKEDITOR.replace("ckeditor1");
+</script>

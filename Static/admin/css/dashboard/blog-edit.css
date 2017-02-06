@@ -1,0 +1,138 @@
+.blog-edit-header {
+    max-width:1500px;
+    min-height: 64px;
+}
+
+.lockable-text-input {
+    border: 1px solid grey;
+    background-color: #e5ffee;
+}
+
+.focussed-text-input {
+    border: 1px solid black;
+    background-color: white;
+}
+
+.unfocussed-text-input {
+    border: 1px solid #ccffcc;
+    background-color: #e5ffee;
+}
+
+.blog-title-input {
+    min-height: 64px;
+    max-height: 200px;
+    resize: auto;
+    overflow: hidden;
+    height: 64px;
+    max-width: 1300px;
+    min-width: 1300px;
+    font-size: 50px;
+    float:left;
+    border-top-left-radius: 5px;
+}
+
+.blog-title-options {
+    width:160px;
+    height: 44px;
+    padding: 10px;
+    float:left;
+    background-color: #1BF507;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: ‘Courier New’, Courier, monospace;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.blog_option_input {
+    margin-left: 10px;
+    height: 30px;
+    width: 450px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: ‘Courier New’, Courier, monospace;
+    font-size: 15px;
+}
+
+.blog-title-options:hover {
+    background-color: #80F576;
+}
+
+.blog-title-options-text {
+    float: right;
+    margin-top: 10px;
+}
+
+#blog_options {
+    background-color: #1BF507;
+    width: 1480px;
+    float: left;
+}
+
+.blog_option {
+    width: 25%;
+}
+
+.blog-description-div {
+    width: 1484px;
+    max-height: 300px;
+}
+
+.blog-description-textarea {
+    max-width: 1484px;
+    min-width: 1484px;
+    min-height: 100px;
+    float: left;
+}
+
+.blog-contents {
+    float: left;
+    max-width: 1488px;
+    min-width: 1488px;
+    min-height: 800px;
+    max-height: 10000px;
+}
+
+.blog-contents-editor {
+    width: 100%;
+    height: 10000px;
+    background-color: green;
+}
+
+#right_panel {
+    width: 150px;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+}
+
+.right_panel_option {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+#save_status {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+    height: 100px;
+    width: 129px;
+}
+
+.no_save_status_colour {
+    background-color: grey;
+}
+
+.saved_colour {
+    background-color: #1BF507;
+}
+
+.pending_save_colour {
+    background-color: yellow;
+}
+
+.not_saved_colour {
+    background-color: red;
+}

@@ -1,0 +1,183 @@
+body.why_the_fuck_is_this_not_default {
+    padding: 0px;
+    margin: 0px;
+}
+
+#proper_header_like {
+    top: 0px;
+    left: 0px;
+}
+
+.waiting * {
+    cursor: wait;
+}
+
+.link_hover * {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.gentle_background_colour {
+    background-color: #e5ffee;
+}
+
+.nice_attentive_green_colour {
+    background-color: #1BF507;
+}
+
+.non_gentle_background_colour {
+    background-color: #009933;
+}
+
+.thick_border {
+    border: 5px solid black;
+}
+
+.thin_border_bottom {
+    border-bottom: 2px solid black;
+}
+
+.rounded_corners {
+    border-radius: 10px;
+}
+
+.nice_box {
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.nice_input {
+    margin-left: 10px;
+    height: 30px;
+    width: 350px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: ‘Courier New’, Courier, monospace;
+    font-size: 15px;
+}
+
+.nice_button {
+    height: 40px;
+    background-color: #1BF507;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: ‘Courier New’, Courier, monospace;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nice_button:hover {
+    background-color: #80F576;
+}
+
+.nice_menu_item:hover {
+    background-color: #80F576;
+}
+
+.nice_box_header_box {
+    height: 30px;
+    background-color: #1BF507;
+    border-bottom: 2px solid black;
+}
+
+.do_not_display {
+    display: none;
+}
+
+.border-right {
+    border-right: 2px solid black;
+}
+
+.border-left {
+    border-left: 2px solid black;
+}
+
+.nice_box_header_box_with_padding {
+    padding: 10px;
+    height: 30px;
+    background-color: #1BF507;
+    border-bottom: 2px solid black;
+}
+
+.nice_button_colours {
+    background-color: #1BF507;
+}
+
+.nice_button_colours:hover {
+    background-color: #80F576;
+}
+
+.align_centre {
+    text-align: center;
+    margin:auto;
+}
+
+.nice_font {
+    font-family: ‘Courier New’, Courier, monospace;
+    color: black;
+}
+
+.nice_header_font_size {
+    font-size: 25px !important;
+}
+
+.show_more_icon {
+    font-size: 50px !important;
+}
+
+.nice_label_font_size {
+    font-size: 20px;
+}
+
+.display_inline {
+    display: inline;
+}
+
+#main_contents {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    margin-left: 180px;
+    min-height: 500px;
+}
+
+#edit_container_panel {
+    float: left;
+}
+
+.side_menu_panel {
+    display: inline-block;
+    width: 200px;
+    position:fixed;
+    left: 5px;
+    top:52px;
+}
+
+.side_menu_panel_option {
+    float:left;
+    font-family: ‘Courier New’, Courier, monospace;
+    width: 188px;
+    color: black;
+    margin: auto;
+    padding: 5px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#editing_panel {
+    float: left;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.fixed_position {
+    position: fixed;
+}
+
+.option_toggled {
+    background-color: #80F576;
+}
