@@ -35,6 +35,8 @@ $nodeArray[5] = makeNode("/^static-admin-css$/", FETCH_ADMIN_CSS_ACTION, true);
 $nodeArray[6] = makeNode("/^static-admin-js$/", FETCH_ADMIN_JS_ACTION, true);
 $nodeArray[7] = makeNode("/^static-media-blogpost$/", FETCH_BLOGPOST_STATIC, true);
 
+$nodeArray[8] = makeNode("/^phpinfo$/", PHP_INFO);
+
 //Put the test action in
 //$nodeArray[2] = makeNode("/^test-action$/", TEST_ACTION);
 

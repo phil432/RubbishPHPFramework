@@ -36,3 +36,4 @@ define('FETCH_BLOGPOST_STATIC', 'BLOGPOST_STATIC');
 
 // Here is a test action to help me to build shit
 define('TEST_ACTION', 'TEST_ACTION');
+define('PHP_INFO', 'PHP_INFO');

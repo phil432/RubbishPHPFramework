@@ -110,7 +110,6 @@ function sendSaveBlog() {
         '/admin/ajax/save-blog',
         saveString,
         function(data, status) {
-            console.log(data);
             var result = JSON.parse(data);
             $('#blog_id_tag').text(result.blog_id);
             $('#last_save_hash').text(result.hash);
@@ -144,8 +143,6 @@ function blogToJSONString() {
         blogDescription: $("#blog_description_edit").val(),
         blogContents: CKEDITOR.instances['ckeditor1'].getData()
     }
-    // DEBUG
-    console.log(JSON.stringify(blogEntry));
     return JSON.stringify(blogEntry);
 }
 

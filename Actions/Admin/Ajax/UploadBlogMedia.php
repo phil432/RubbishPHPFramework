@@ -8,7 +8,6 @@ class UploadBlogMedia {
 
         checkIfLoggedInAndRedirectIfNot();
         $data = file_get_contents("php://input");
-        echo $data;
         $blogId = $_POST['blog_id'];
         $file = $_FILES['upload_file'];
         $mediaUpload = new MediaUpload($blogId);

@@ -97,6 +97,9 @@ class Respond {
 
             case TEST_ACTION:
                 return TestAction::go($uriArray);
+
+            case PHP_INFO:
+                return phpinfo();
         }
     }
 }

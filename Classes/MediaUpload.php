@@ -62,9 +62,13 @@ class MediaUpload {
         $this->file = $file;
         $this->createDirIfNotExists();
         $filePath = $this->createFullPath();
-        move_uploaded_file($this->file['tmp_name'], $filePath);
-        $this->file = null;
-        return $filePath;
+        try {
+            move_uploaded_file($this->file['tmp_name'], $filePath);
+            $this->file = null;
+            return $filePath;
+        } catch (Exception $e) {
+            return "file could not be uploaded";
+        }
 
     }
 }
