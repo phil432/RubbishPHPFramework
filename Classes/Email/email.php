@@ -1,7 +1,7 @@
 <?php
 
 require_once(__dir__.'/../Config.php');
-require_once($GLOBALS['PHPMAILER_LOCATION'].'/autoload.php');
+require_once($GLOBALS['PHPMAILER_AUTOLOAD_LOCATION']);
 
 class email {
 
