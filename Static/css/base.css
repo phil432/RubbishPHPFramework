@@ -1,0 +1,16 @@
+.fix_bottom_right {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.fix_bottom_middle {
+    position: fixed;
+    bottom: 0px;
+    display: inline-block;
+    margin: auto;
+}
+
+div.fade_button {
+    opacity: 0.5;
+}

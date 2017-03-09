@@ -16,6 +16,8 @@ require_once __dir__.'/Admin/Ajax/Logout.php';
 require_once __dir__.'/Admin/Ajax/PasswordResetAction.php';
 require_once __dir__.'/Admin/Ajax/SetNewPassword.php';
 require_once __dir__.'/Test/TestAction.php';
+require_once __dir__.'/Blog/HomePageAction.php';
+require_once __dir__.'/Blog/CoverPageAction.php';
 
 class Respond {
 
@@ -97,6 +99,13 @@ class Respond {
 
             case TEST_ACTION:
                 return TestAction::go($uriArray);
+
+            // All the actual blog shit here
+            case FETCH_HOME_PAGE:
+                return HomePageAction::go();
+
+            case FETCH_COVER_PAGE:
+                return CoverPageAction::go();
 
             case PHP_INFO:
                 return phpinfo();

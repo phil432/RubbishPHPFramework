@@ -37,6 +37,8 @@ $nodeArray[7] = makeNode("/^static-media-blogpost$/", FETCH_BLOGPOST_STATIC, tru
 
 $nodeArray[8] = makeNode("/^phpinfo$/", PHP_INFO);
 
+$nodeArray[9] = makeNode("/^home$/", FETCH_HOME_PAGE);
+$nodeArray[10] = makeNode("/^$/", FETCH_COVER_PAGE);
 //Put the test action in
 //$nodeArray[2] = makeNode("/^test-action$/", TEST_ACTION);
 

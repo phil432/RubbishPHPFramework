@@ -34,6 +34,10 @@ define('FETCH_ADMIN_CSS_ACTION', 'ADMIN_CSS');
 define('FETCH_ADMIN_JS_ACTION', 'ADMIN_JS');
 define('FETCH_BLOGPOST_STATIC', 'BLOGPOST_STATIC');
 
+// Blog actions here
+define('FETCH_HOME_PAGE', 'FETCH_HOME_PAGE');
+define('FETCH_COVER_PAGE', 'FETCH_COVER_PAGE');
+
 // Here is a test action to help me to build shit
 define('TEST_ACTION', 'TEST_ACTION');
 define('PHP_INFO', 'PHP_INFO');

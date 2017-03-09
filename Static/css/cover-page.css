@@ -1,0 +1,36 @@
+body {
+    background-image: url("/static/Media/BlogImages/CoverPage/SDC10060.JPG");
+    background-size: cover;
+}
+
+div#cover_text_box {
+    opacity: 0.5;
+}
+
+h1.cover_title {
+    font-size: 150px;
+    font-weight: bold;
+    color: blue;
+}
+
+p.cover_description {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+
+p.read_on_button {
+    font-size: 50px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin:auto;
+    float: left;
+    opacity: 1;
+}
+
+div.read_on_button {
+    background-color: blue;
+    width: 270px;
+    height: 90px;
+}
