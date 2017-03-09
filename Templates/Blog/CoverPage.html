@@ -1,0 +1,23 @@
+{% extends 'Blog/Components/Base.html' %}
+
+{% block head %}
+    <title>Boaty Boat Stuff</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/cover-page.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
+{% endblock  %}
+
+{%block body %}
+<div id="cover_text_box">
+    <h1 class="cover_title">Boaty Boat Stuff</h1>
+    <p class="cover_description">A tale of one idiot and his boat.</p>
+</div>
+
+
+<div id="read_on_button" class="read_on_button fade_button fix_bottom_right">
+    <p class="read_on_button">Read on...</p>
+</div>
+
+<script src="/static/js/cover.js"></script>
+<script src="/static/js/base.js"></script>
+
+{% endblock %}
