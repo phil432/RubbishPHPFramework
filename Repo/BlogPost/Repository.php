@@ -32,7 +32,17 @@ class Repository {
         $collection = new Collection();
         foreach ($results as $result) {
             $entity = Mapper::fromArray($result);
-            $this->collection->addToCollectionArray($entity);
+            $collection->addToCollectionArray($entity);
+        }
+        return $collection;
+    }
+
+    function fetchAllPublished() {
+        $results = $this->db->fetchAllPublished();
+        $collection = new Collection();
+        foreach ($results as $result) {
+            $entity = Mapper::fromArray($result);
+            $collection->addToCollectionArray($entity);
         }
         return $collection;
     }

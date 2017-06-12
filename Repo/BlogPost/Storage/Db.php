@@ -57,6 +57,16 @@ class Db {
         return $this->connection->query($query, array());
     }
 
+    function fetchAllPublished() {
+        $query = "SELECT blog_post.id, created, posted, updated, published, slug,
+                title, blog_text_id, short_description, blog_text
+                FROM blog_post
+                INNER JOIN blog_post_text
+                ON blog_post.blog_text_id = blog_post_text.id
+                WHERE published = 1";
+        return $this->connection->query($query, array());
+    }
+
     function fetchBlogPostById($id) {
         $query = "SELECT blog_post.id, created, posted, updated, published, slug,
                 title, blog_text_id, short_description, blog_text

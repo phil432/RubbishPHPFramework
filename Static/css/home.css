@@ -1,0 +1,32 @@
+div#article_list {
+    width: 1200px;
+    margin-top: 55px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div#list_title {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 40px;
+    background-color: #d7e3f7;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+div.article_list_item {
+
+}
+
+div.article_list_item_title {
+    font-size: 30px;
+}
+
+div.article_list_item_body {
+    font-size: 20px;
+}
+
+div.article_list_item_selectbutton {
+
+}
