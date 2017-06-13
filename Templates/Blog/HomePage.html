@@ -10,14 +10,12 @@
             Article List
         </div>
     {% for Article in AllPublishedArticles %}
-        <div class="article_list_item">
+        <div class="article_list_item pointy_thing">
             <div class="article_list_item_title">
                 {{ Article.posted|slice(0, 10) }}: {{ Article.title }}
             </div>
             <div class="article_list_item_body">
                 {{ Article.short_description }}
-            </div>
-            <div class="article_list_item_selectbutton">
             </div>
         </div>
     {% endfor %}
