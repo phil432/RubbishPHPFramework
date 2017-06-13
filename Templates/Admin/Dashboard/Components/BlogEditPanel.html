@@ -16,13 +16,13 @@
                     Publish? :
                 </td>
                 <td class="blog_option">
-                    <input id="publish" class="nice_input " type="checkbox" value="{{ published }}"/>
+                    <input id="publish" class="nice_input " type="checkbox" {% if published == 1 %}checked{% endif %}/>
                 </td>
                 <td class="nice_font blog_option">
                     Publishing Date :
                 </td>
                 <td class="blog_option">
-                    <input id="publishing_date" class="datepicker blog_option_input" type="date"/>
+                    <input id="publishing_date" class="datepicker blog_option_input" type="date" value="{{ posted }}"/>
                 </td>
             </tr>
             <tr>
