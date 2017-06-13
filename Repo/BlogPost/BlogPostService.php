@@ -25,6 +25,10 @@ class BlogPostService {
         return $this->repository->fetchAllBlogPosts();
     }
 
+    function fetchAllPublished() {
+        return $this->repository->fetchAllPublished();
+    }
+
     function updateBlogPost($blogPost) {
         $entity = $blogPost->getBlogPostEntity();
         return $this->repository->updateBlogPost($entity);
