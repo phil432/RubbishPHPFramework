@@ -22,3 +22,15 @@ for (var button = 0; button < pointyThing.length; button++) {
     })
 
 }
+
+document.getElementById("welcome").addEventListener("click", function() {
+    window.location.href = "/";
+})
+
+document.getElementById("articles").addEventListener("click", function() {
+    window.location.href = "/home";
+})
+
+document.getElementById("contact").addEventListener("click", function() {
+    window.location.href = "/home";
+})
