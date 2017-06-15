@@ -16,7 +16,7 @@ class Mapper {
                 $array['short_description'],
                 $array['blog_text'],
                 $array['blog_text_id'],
-                $array['published'],
+                \DateTime::createFromFormat('Y-m-d', $array['published']),
                 $array['slug']
         );
 
