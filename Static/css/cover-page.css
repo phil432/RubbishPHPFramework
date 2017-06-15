@@ -1,10 +1,18 @@
 body {
-    background-image: url("/static/Media/BlogImages/CoverPage/SDC10060.JPG");
+    background-image: url("/static/Media/BlogImages/CoverPage/IMAG0397.jpg");
     background-size: cover;
 }
 
-div#cover_text_box {
-    opacity: 0.5;
+div.cover_text_box {
+    background-color: white;
+    opacity: 0.8;
+    width: 90%;
+    min-height: 200px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 h1.cover_title {
@@ -13,7 +21,7 @@ h1.cover_title {
     color: blue;
 }
 
-p.cover_description {
+p.cover_description_header {
     font-size: 30px;
     font-weight: bold;
     color: blue;

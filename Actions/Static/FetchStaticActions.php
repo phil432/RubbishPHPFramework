@@ -41,7 +41,33 @@ class FetchStaticActions {
         if(!$staticString) {
             $staticString = $staticDirPath.reconstructPathFromArray($uriArray);
         }
+
+        else {
+            $fileName = array_values(array_slice($uriArray, -1))[0];
+            self::setHeadersAccordingToFile($fileName);
+        }
+
         return $staticString;
+    }
+
+    static function setHeadersAccordingToFile($filename) {
+        // fetch extension from filename
+        $ext = pathinfo($filename, PATHINFO_EXTENSION);
+
+        // check if css
+        if (in_array($ext, array("css", "CSS"))) {
+            header('Content-Type: text/css');
+        }
+
+        // check if image
+        if (in_array($ext, array("jpeg", "JPEG", "jpg", "JPG"))) {
+            header('Content-Type: image/jpeg');
+        }
+
+        if (in_array($ext, array("png", "PNG"))) {
+            header('Content-Type: image/png');
+        }
+
     }
 
 }
