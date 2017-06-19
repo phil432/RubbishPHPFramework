@@ -62,7 +62,7 @@ class Entity {
     }
 
     function setDatePosted($datePosted) {
-        $this->datePosted = $datePosted;
+        $this->datePosted = \DateTime::createFromFormat('Y-m-d', $datePosted);
     }
 
     function getDatePosted() {

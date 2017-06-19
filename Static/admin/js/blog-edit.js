@@ -106,10 +106,12 @@ function updateSaveStatusToNotSaved() {
 
 function sendSaveBlog() {
     var saveString = blogToJSONString();
+    console.log(saveString);
     $.post(
         '/admin/ajax/save-blog',
         saveString,
         function(data, status) {
+            console.log(data);
             var result = JSON.parse(data);
             $('#blog_id_tag').text(result.blog_id);
             $('#last_save_hash').text(result.hash);

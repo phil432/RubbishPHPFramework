@@ -19,7 +19,7 @@ class Mapper {
                 \DateTime::createFromFormat('Y-m-d', $array['published']),
                 $array['slug']
         );
-
+        var_dump($entity);
         return $entity;
     }
 
