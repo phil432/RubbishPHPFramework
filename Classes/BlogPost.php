@@ -59,7 +59,6 @@ class BlogPost {
 
     function getDatePosted() {
         return $this->blogPostEntity->getDatePosted();
-        return $datePosted;
     }
 
     function setDatePosted($date) {

@@ -72,6 +72,7 @@ function fetchSearchResults(searchQueryString) {
         '/admin/ajax/search-blogs',
         searchQueryString,
         function(data, status) {
+            console.log(data);
             var results = JSON.parse(data);
             var finalSearchHTML = "";
 

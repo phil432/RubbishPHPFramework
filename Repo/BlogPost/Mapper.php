@@ -19,7 +19,6 @@ class Mapper {
                 $array['published'],
                 $array['slug']
         );
-
         return $entity;
     }
 
