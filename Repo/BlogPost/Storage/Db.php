@@ -94,6 +94,7 @@ class Db {
         $queryBlogUpdate = "UPDATE blog_post SET
                 posted = ?, updated = ?, title = ?, published = ?, slug = ?
                 WHERE id = ?";
+
         $this->connection->query($queryBlogUpdate, array(
                 $entity->getDatePosted(),
                 $entity->getLastUpdated(),

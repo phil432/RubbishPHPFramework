@@ -12,9 +12,7 @@ class HomePageAction {
 
         $blogPostService = new BlogPost\blogPostService();
         $allPublishedArticles = $blogPostService->fetchAllPublished();
-
         $data['AllPublishedArticles'] = $allPublishedArticles->fetchSimpleArray();
-        //var_dump($data);
 
         $loader->loadTemplate('Blog/HomePage.html');
         return $loader->render($data);
