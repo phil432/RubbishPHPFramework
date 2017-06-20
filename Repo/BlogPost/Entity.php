@@ -27,7 +27,7 @@ class Entity {
             $slug = null) {
         $this->id = $id;
         $this->dateCreated = $dateCreated;
-        $this->datePosted = $datePosted;
+        $this->datePosted = \DateTime::createFromFormat('Y-m-d H:i:s', $datePosted);
         $this->dateLastUpdated = $dateLastUpdated;
         $this->title = $title;
         $this->shortDescription = $shortDescription;
@@ -62,11 +62,11 @@ class Entity {
     }
 
     function setDatePosted($datePosted) {
-        $this->datePosted = $datePosted;
+        $this->datePosted = \DateTime::createFromFormat('Y-m-d', $datePosted);
     }
 
     function getDatePosted() {
-        return $this->datePosted;
+        return $this->datePosted->format('Y-m-d');
     }
 
     function getLastUpdated() {
