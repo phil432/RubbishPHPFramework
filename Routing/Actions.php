@@ -37,6 +37,8 @@ define('FETCH_BLOGPOST_STATIC', 'BLOGPOST_STATIC');
 // Blog actions here
 define('FETCH_HOME_PAGE', 'FETCH_HOME_PAGE');
 define('FETCH_COVER_PAGE', 'FETCH_COVER_PAGE');
+define('FETCH_ARTICLE_PAGE', 'FETCH_ARTICLE_PAGE');
+define('FETCH_CONTACT_PAGE', 'FETCH_CONTACT_PAGE');
 
 // Here is a test action to help me to build shit
 define('TEST_ACTION', 'TEST_ACTION');

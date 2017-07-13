@@ -1,10 +1,13 @@
 div#article_list {
     width: 1200px;
+    background-color: white;
+    opacity: 0.8;
     margin-top: 55px;
     margin-left:auto;
     margin-right:auto;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
+    border-radius: 5px;
 }
 
 div#list_title {
@@ -12,15 +15,14 @@ div#list_title {
     padding-right: 10px;
     font-size: 40px;
     background-color: #d7e3f7;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    border-bottom: 1px solid grey;
 }
 
 div.article_list_item {
-    width: 1200px;
+    border-top: 1px solid grey;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 1190px;
     min-height: 140px;
-    border-bottom: 1px solid grey;
 }
 
 div.article_list_item:hover {

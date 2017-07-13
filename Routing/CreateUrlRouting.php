@@ -39,6 +39,8 @@ $nodeArray[8] = makeNode("/^phpinfo$/", PHP_INFO);
 
 $nodeArray[9] = makeNode("/^home$/", FETCH_HOME_PAGE);
 $nodeArray[10] = makeNode("/^$/", FETCH_COVER_PAGE);
+$nodeArray[11] = makeNode("/^article$/", FETCH_ARTICLE_PAGE);
+$nodeArray[12] = makeNode("/^contact$/", FETCH_CONTACT_PAGE);
 //Put the test action in
 //$nodeArray[2] = makeNode("/^test-action$/", TEST_ACTION);
 

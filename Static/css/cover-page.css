@@ -1,8 +1,3 @@
-body {
-    background-image: url("/static/Media/BlogImages/CoverPage/IMAG0397.jpg");
-    background-size: cover;
-}
-
 div.cover_text_box {
     background-color: white;
     opacity: 0.8;

@@ -18,6 +18,8 @@ require_once __dir__.'/Admin/Ajax/SetNewPassword.php';
 require_once __dir__.'/Test/TestAction.php';
 require_once __dir__.'/Blog/HomePageAction.php';
 require_once __dir__.'/Blog/CoverPageAction.php';
+require_once __dir__.'/Blog/FetchContactAction.php';
+require_once __dir__.'/Blog/FetchArticleAction.php';
 
 class Respond {
 
@@ -106,6 +108,12 @@ class Respond {
 
             case FETCH_COVER_PAGE:
                 return CoverPageAction::go();
+
+            case FETCH_ARTICLE_PAGE:
+                return FetchArticleAction::go();
+
+            case FETCH_CONTACT_PAGE:
+                return FetchContactAction::go();
 
             case PHP_INFO:
                 return phpinfo();
