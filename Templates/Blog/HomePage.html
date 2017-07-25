@@ -11,7 +11,7 @@
         </div>
     {% for Article in AllPublishedArticles %}
         <div class="article_list_item pointy_thing">
-            <div class="hidden">{{Article.id}}</div>
+            <div class="hidden article_id">{{Article.id}}</div>
             <div class="article_list_item_title">
                 {{ Article.posted|slice(0, 10) }}: {{ Article.title }}
             </div>
@@ -21,4 +21,7 @@
         </div>
     {% endfor %}
     </div>
+    {% block scripts %}
+        <script src="/static-js/home.js"></script>
+    {% endblock %}
 {% endblock %}
