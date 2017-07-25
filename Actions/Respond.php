@@ -109,8 +109,14 @@ class Respond {
             case FETCH_COVER_PAGE:
                 return CoverPageAction::go();
 
-            case FETCH_ARTICLE_PAGE:
-                return FetchArticleAction::go();
+            case FETCH_ARTICLE_PAGE_BY_ID:
+                return FetchArticleAction::fetchById($uriArray);
+
+            //case FETCH_ARTICLE_PAGE_BY_SLUG:
+                //return FetchArticleAction::fetchBySlug($uriArray);
+
+            //case FETCH_ARTICLE_NOT_FOUND:
+                //return FetchArticleAction::FetchNotFound();
 
             case FETCH_CONTACT_PAGE:
                 return FetchContactAction::go();

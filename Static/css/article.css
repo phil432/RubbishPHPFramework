@@ -1,0 +1,23 @@
+div#article_container {
+    width: 1200px;
+    min-height: 300px;
+    background-color: white;
+    opacity: 0.8;
+    margin-top: 55px;
+    margin-left:auto;
+    margin-right:auto;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-radius: 5px;
+}
+
+div#article_header {
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    background-color: #d7e3f7;
+}
+
+div#article_contents {
+    
+}

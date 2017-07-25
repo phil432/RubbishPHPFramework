@@ -4,7 +4,7 @@ require_once __dir__.'/../../Classes/TemplateLoader.php';
 require_once __dir__.'/../../Classes/BlogPost.php';
 require_once __dir__.'/../../Repo/BlogPost/BlogPostService.php';
 
-class CoverPageAction {
+class ContactPageAction {
 
     static function go() {
         $loader = new TemplateLoader();

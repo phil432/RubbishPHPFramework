@@ -1,0 +1,16 @@
+{% extends "Blog/Inherit/Base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="/static-css/article.css" />
+{% endblock %}
+
+{% block body %}
+    <div id = "article_container">
+        <div id = "article_header">
+            {{ posted}} - {{ title }}
+        </div>
+        <div id="article_contents">
+            {{ blog_text|raw }}
+        </div>
+    </div>
+{% endblock %}

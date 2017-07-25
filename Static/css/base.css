@@ -51,3 +51,7 @@ div.header_option:hover {
 div.fade_button {
     opacity: 0.5;
 }
+
+.hidden {
+    display: none;
+}

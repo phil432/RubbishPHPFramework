@@ -66,7 +66,11 @@ class Entity {
     }
 
     function getDatePosted() {
-        return $this->datePosted->format('Y-m-d');
+        $formattedDate = null;
+        if ($this->datePosted != null) {
+            $formattedDate = $this->datePosted->format('Y-m-d');
+        }
+        return $formattedDate;
     }
 
     function getLastUpdated() {
