@@ -18,14 +18,13 @@ class FetchArticleAction {
     }
 
     static function fetchBySlug($uriArray) {
-        $loader = new TemplateLoader();
-        $data = array();
-
+        $requestedArticleSlug = $uriArray[1];
         $blogPostService = new BlogPost\blogPostService();
-        $allPublishedArticles = $blogPostService->fetchAllPublished();
-        $data['AllPublishedArticles'] = $allPublishedArticles->fetchSimpleArray();
+        $articleData = $blogPostService->fetchBlogPostBySlug($requestedArticleSlug);
 
-        $loader->loadTemplate('Blog/HomePage.html');
+        $loader = new TemplateLoader();
+        $data = BlogPost\Mapper::toArray($articleData);
+        $loader->loadTemplate('Blog/ArticlePage.html');
         return $loader->render($data);
     }
 

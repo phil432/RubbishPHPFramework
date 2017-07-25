@@ -23,6 +23,11 @@ class Repository {
         return Mapper::fromArray($result[0]);
     }
 
+    function fetchBlogPostBySlug($slug) {
+        $result = $this->db->fetchBlogPostBySlug($slug);
+        return Mapper::fromArray($result[0]);
+    }
+
     function fetchBlogPostByPostedDateRange() {
         return "not implemented yet";
     }

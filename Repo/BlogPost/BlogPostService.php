@@ -21,6 +21,10 @@ class BlogPostService {
         return $this->repository->fetchBlogPostById($id);
     }
 
+    function fetchBlogPostBySlug($slug) {
+        return $this->repository->fetchBlogPostBySlug($slug);
+    }
+
     function fetchAllBlogPosts() {
         return $this->repository->fetchAllBlogPosts();
     }

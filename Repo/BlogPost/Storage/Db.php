@@ -79,6 +79,17 @@ class Db {
         return $result;
     }
 
+    function fetchBlogPostBySlug($slug) {
+        $query = "SELECT blog_post.id, created, posted, updated, published, slug,
+                title, blog_text_id, short_description, blog_text
+                FROM blog_post
+                INNER JOIN blog_post_text
+                ON blog_post.blog_text_id = blog_post_text.id
+                WHERE blog_post.slug = ?";
+        $result = $this->connection->query($query, array($id));
+        return $result;
+    }
+
     function updateBlogPost($entity) {
         // Update blog text first
         $queryBlogTextUpdate = "UPDATE blog_post_text SET
