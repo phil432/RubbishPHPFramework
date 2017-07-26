@@ -32,5 +32,5 @@ document.getElementById("articles").addEventListener("click", function() {
 })
 
 document.getElementById("contact").addEventListener("click", function() {
-    window.location.href = "/home";
+    window.location.href = "/contact";
 })

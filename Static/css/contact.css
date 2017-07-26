@@ -1,0 +1,23 @@
+div.email_form {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.email_form_header {
+    background-color: #d7e3f7;
+    font-size: 30px;
+}
+
+div.email_input_div {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input.oneline_input {
+    border-radius: 0px;
+    border: 1px solid grey;
+    padding: 5px;
+    width: 800px;
+}

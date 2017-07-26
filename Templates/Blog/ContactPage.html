@@ -1,0 +1,34 @@
+{% extends "Blog/Inherit/Base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="/static-css/contact.css" />
+{% endblock %}
+
+{% block body %}
+    <div class = "page_container">
+        <div id = "content_section">
+            <div class = "content_header">
+                Contact
+            </div>
+            <div class = "content_body">
+                hello this is where the form will be
+                <div class="email_form">
+                    <div class="email_form_header">
+                        Email me
+                    </div>
+                    <div class="email_input_div">
+                        Your Email  <input class="oneline_input email_input" />
+                    </div>
+                    <div class="message_content_div">
+                        <textarea>Your message...</textarea>
+                    </div>
+                    <div class="button">
+                        Send
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block scripts %}
+    {% endblock %}
+{% endblock %}
