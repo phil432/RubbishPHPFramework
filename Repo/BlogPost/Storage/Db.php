@@ -86,7 +86,7 @@ class Db {
                 INNER JOIN blog_post_text
                 ON blog_post.blog_text_id = blog_post_text.id
                 WHERE blog_post.slug = ?";
-        $result = $this->connection->query($query, array($id));
+        $result = $this->connection->query($query, array($slug));
         return $result;
     }
 

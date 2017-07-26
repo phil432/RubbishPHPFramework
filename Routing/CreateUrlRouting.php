@@ -41,7 +41,7 @@ $nodeArray[9] = makeNode("/^home$/", FETCH_HOME_PAGE);
 $nodeArray[10] = makeNode("/^$/", FETCH_COVER_PAGE);
 $nodeArray[11] = makeNode("/^article$/", FETCH_ARTICLE_NOT_FOUND);
 $nodeArray[11][0] = makeNode("/^[0-9]{1,3}$/", FETCH_ARTICLE_PAGE_BY_ID);
-$nodeArray[11][1] = makeNode("/^[a-zA-Z0-9-]{4-100}$/", FETCH_ARTICLE_PAGE_BY_SLUG);
+$nodeArray[11][1] = makeNode("/^[a-zA-Z0-9\-]{4,100}$/", FETCH_ARTICLE_PAGE_BY_SLUG);
 $nodeArray[12] = makeNode("/^contact$/", FETCH_CONTACT_PAGE);
 //Put the test action in
 //$nodeArray[2] = makeNode("/^test-action$/", TEST_ACTION);

@@ -27,16 +27,4 @@ class FetchArticleAction {
         $loader->loadTemplate('Blog/ArticlePage.html');
         return $loader->render($data);
     }
-
-    static function FetchNotFound() {
-        $loader = new TemplateLoader();
-        $data = array();
-
-        $blogPostService = new BlogPost\blogPostService();
-        $allPublishedArticles = $blogPostService->fetchAllPublished();
-        $data['AllPublishedArticles'] = $allPublishedArticles->fetchSimpleArray();
-
-        $loader->loadTemplate('Blog/HomePage.html');
-        return $loader->render($data);
-    }
 }

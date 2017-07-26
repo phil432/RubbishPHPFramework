@@ -110,13 +110,15 @@ class Respond {
                 return CoverPageAction::go();
 
             case FETCH_ARTICLE_PAGE_BY_ID:
+                echo "by id";
                 return FetchArticleAction::fetchById($uriArray);
 
             case FETCH_ARTICLE_PAGE_BY_SLUG:
+                echo "slug";
                 return FetchArticleAction::fetchBySlug($uriArray);
 
-            //case FETCH_ARTICLE_NOT_FOUND:
-                //return FetchArticleAction::FetchNotFound();
+            case FETCH_ARTICLE_NOT_FOUND:
+                return FetchArticleAction::fetchById(-1);
 
             case FETCH_CONTACT_PAGE:
                 return FetchContactAction::go();

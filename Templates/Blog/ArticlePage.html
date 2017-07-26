@@ -7,10 +7,19 @@
 {% block body %}
     <div id = "article_container">
         <div id = "article_header">
-            {{ posted}} - {{ title }}
+            {% if title %}
+                {{ posted}} - {{ title }}
+            {% else %}
+                Article not found
+            {% endif %}
         </div>
         <div id="article_contents">
-            {{ blog_text|raw }}
+            {% if title %}
+                {{ blog_text|raw }}
+            {% else %}
+                Hmmmm. Looks as though the article that you have requested does not exist.
+                Not sure where you got this link from then. Oh well. Maybe you can find what you're looking for <a href="/home">here</a>.
+            {% endif %} 
         </div>
     </div>
 {% endblock %}
