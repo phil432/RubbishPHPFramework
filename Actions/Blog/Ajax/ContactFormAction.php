@@ -17,7 +17,7 @@ class ContactFormAction {
             'addressText' => $GLOBALS['ADMIN_EMAIL'],
             'addressName' => 'Phil Tebbutt'
         ];
-        $addressArray = $array("toAddress");
+        $addressArray = array($toAddress);
         $messageText = "Email: ".$data->emailAddress.", Message: ".$data->messageBody;
 
         $message = new BoatyBlogEmail(
@@ -26,6 +26,10 @@ class ContactFormAction {
             $messageText,
             "hello"
         );
+
+        if($message->send()) {
+            $result = static::SUCCESS;
+        }
 
         $response = array(
             'result' => $result

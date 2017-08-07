@@ -97,3 +97,7 @@ div.button {
     color: white;
     display: block;
 }
+
+.waiting * {
+    cursor: wait;
+}

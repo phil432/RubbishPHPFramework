@@ -20,7 +20,6 @@ document.getElementById("send_message").addEventListener("click", function() {
         message.emailAddress = $("#email_input").val();
         message.messageBody = $("#message_body").val();
         var messageJson = JSON.stringify(message);
-        alert(messageJson);
 
         $.post(
             "/ajax/contact-form",
@@ -29,9 +28,9 @@ document.getElementById("send_message").addEventListener("click", function() {
                 $("body").removeClass("waiting");
                 var response = JSON.parse(data);
                 if (response.result == 'SUCCESS') {
-                    alert(response.result)
+                    $("#email_form").html("Message sent. Thanks! I'll get back to you soon.");
                 } else {
-                    alert(response.result);
+                    alert("Hmmmm. Something went wront. Not sure what. Maybe give it another go.");
                 }
             }
         );

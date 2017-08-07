@@ -42,9 +42,11 @@ class SMTPEmail {
 
     public function send() {
         if (!$this->mailer->send()) {
+            return false;
             // add some proper logging here at some point
             // echo "Mailer Error: ".$this->mailer->ErrorInfo;
         } else {
+            return true;
             // Do some proper logging here one day too
         }
     }
