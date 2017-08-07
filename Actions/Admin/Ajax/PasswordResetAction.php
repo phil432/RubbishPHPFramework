@@ -28,7 +28,7 @@ class PasswordResetAction {
 
             // send the email
             $toAddress = [
-                'addressText' => 'philtebbutt@hotmail.com',
+                'addressText' => $GLOBALS['ADMIN_EMAIL'],
                 'addressName' => 'Phil Tebbutt'
             ];
             $addressArray = array($toAddress);

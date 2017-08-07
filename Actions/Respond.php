@@ -20,6 +20,7 @@ require_once __dir__.'/Blog/HomePageAction.php';
 require_once __dir__.'/Blog/CoverPageAction.php';
 require_once __dir__.'/Blog/FetchContactAction.php';
 require_once __dir__.'/Blog/FetchArticleAction.php';
+require_once __dir__.'/Blog/Ajax/ContactFormAction.php';
 
 class Respond {
 
@@ -122,6 +123,9 @@ class Respond {
 
             case FETCH_CONTACT_PAGE:
                 return FetchContactAction::go();
+
+            case CONTACT_FORM_ACTION:
+                return ContactFormAction::go();
 
             case PHP_INFO:
                 return phpinfo();

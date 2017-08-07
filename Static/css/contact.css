@@ -1,7 +1,10 @@
 div.email_form {
     width: 1000px;
+    padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 div.email_form_header {
@@ -15,9 +18,31 @@ div.email_input_div {
     margin-right: auto;
 }
 
+textarea.message_textarea {
+    resize: none;
+    font-family: "Times New Roman", Times, serif;
+    width: 990px;
+    height: 500px;
+}
+
 input.oneline_input {
     border-radius: 0px;
     border: 1px solid grey;
     padding: 5px;
-    width: 800px;
+    width: 900px;
+}
+
+div.send_message {
+    margin-top: 10px;
+    width: 80px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#error_dialog {
+    padding:10px;
+    font-weight:bold;
+    color:red;
+    font-size: 20px;
 }

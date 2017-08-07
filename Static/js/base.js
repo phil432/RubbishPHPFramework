@@ -11,6 +11,19 @@ for (var button = 0; button < fadeButtons.length; button++) {
     })
 }
 
+var buttons = document.getElementsByClassName("button");
+for (var button = 0; button < buttons.length; button++) {
+    buttons[button].addEventListener("mouseover", function() {
+        this.style.opacity = "0.5";
+        document.body.style.cursor= "pointer";
+    })
+
+    buttons[button].addEventListener("mouseout", function() {
+        this.style.opacity = "1";
+        document.body.style.cursor= "auto";
+    })
+}
+
 var pointyThing = document.getElementsByClassName("pointy_thing");
 for (var button = 0; button < pointyThing.length; button++) {
     pointyThing[button].addEventListener("mouseover", function() {

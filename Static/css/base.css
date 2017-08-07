@@ -90,12 +90,10 @@ div.content_body {
 }
 
 div.button {
-    border-radius: 0.5;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
     background-color: blue;
     color: white;
     display: block;
-}
-
-div.button:hover {
-    opacity: 0.8;
 }

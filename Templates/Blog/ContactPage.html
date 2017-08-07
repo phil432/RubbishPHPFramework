@@ -11,24 +11,27 @@
                 Contact
             </div>
             <div class = "content_body">
-                hello this is where the form will be
                 <div class="email_form">
                     <div class="email_form_header">
                         Email me
                     </div>
                     <div class="email_input_div">
-                        Your Email  <input class="oneline_input email_input" />
+                        Your Email  <input id="email_input" class="oneline_input email_input" />
                     </div>
                     <div class="message_content_div">
-                        <textarea>Your message...</textarea>
+                        <textarea id="message_body" class="message_textarea">Your message...</textarea>
                     </div>
-                    <div class="button">
+                    <div id="send_message" class="button send_message">
                         Send
+                    </div>
+                    <div id="error_dialog" class="hidden">
+                        Hello
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {% block scripts %}
     {% endblock %}
-{% endblock %}
+    {% block scripts %}
+    <script src="/static/js/contact.js"></script>
+    {% endblock %}

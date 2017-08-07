@@ -42,6 +42,9 @@ define('FETCH_ARTICLE_PAGE_BY_ID', 'FETCH_ARTICLE_PAGE_BY_ID');
 define('FETCH_ARTICLE_PAGE_BY_SLUG', 'FETCH_ARTICLE_PAGE_BY_SLUG');
 define('FETCH_CONTACT_PAGE', 'FETCH_CONTACT_PAGE');
 
+// Blog ajax
+define('CONTACT_FORM_ACTION', 'CONTACT_FORM_ACTION');
+
 // Here is a test action to help me to build shit
 define('TEST_ACTION', 'TEST_ACTION');
 define('PHP_INFO', 'PHP_INFO');
