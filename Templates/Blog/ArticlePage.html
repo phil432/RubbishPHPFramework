@@ -1,25 +1,28 @@
 {% extends "Blog/Inherit/Base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" type="text/css" href="/static-css/article.css" />
+<link rel="stylesheet" type="text/css" href="/static-css/article.css" />
 {% endblock %}
 
 {% block body %}
-    <div id = "article_container">
-        <div id = "article_header">
-            {% if title %}
-                {{ posted}} - {{ title }}
-            {% else %}
-                Article not found
-            {% endif %}
-        </div>
-        <div id="article_contents">
-            {% if title %}
-                {{ blog_text|raw }}
-            {% else %}
-                Hmmmm. Looks as though the article that you have requested does not exist.
-                Not sure where you got this link from then. Oh well. Maybe you can find what you're looking for <a href="/home">here</a>.
-            {% endif %} 
-        </div>
+<div id = "article_container">
+    <div id = "article_header">
+    {% if title %}
+        {{ posted}} - {{ title }}
+    {% else %}
+        Article not found
+    {% endif %}
     </div>
+    <div id="article_contents">
+    {% if title %}
+        {{ blog_text|raw }}
+    {% else %}
+        Hmmmm. Looks as though the article that you have requested does not exist.
+        Not sure where you got this link from then. Oh well. Maybe you can find what you're looking for <a href="/home">here</a>.
+    {% endif %}
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/article.js"></script>
 {% endblock %}

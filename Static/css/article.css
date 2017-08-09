@@ -19,5 +19,14 @@ div#article_header {
 }
 
 div#article_contents {
-    
+
+}
+
+img.article_image {
+    border:1px solid grey;
+    border-radius:10px;
+    display: block;
+    text-align: center;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
 }
