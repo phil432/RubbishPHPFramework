@@ -17,6 +17,7 @@ div#header {
     background-color: blue;
     color: white;
     font-size: 45px;
+    z-index: 10;
 }
 
 div.header_option {
