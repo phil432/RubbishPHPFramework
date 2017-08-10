@@ -1,8 +1,7 @@
 div#article_container {
     width: 1200px;
     min-height: 300px;
-    background-color: white;
-    opacity: 0.8;
+    background: rgb(213, 212, 220, .8);
     margin-top: 55px;
     margin-left:auto;
     margin-right:auto;
@@ -33,4 +32,6 @@ img.article_image {
     margin: 0 auto;
     border: 1px solid grey;
     border-radius: 5px;
+    opacity: 1;
+    z-index: 10;
 }
