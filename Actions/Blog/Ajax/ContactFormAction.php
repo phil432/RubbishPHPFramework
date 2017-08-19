@@ -18,13 +18,21 @@ class ContactFormAction {
             'addressName' => 'Phil Tebbutt'
         ];
         $addressArray = array($toAddress);
-        $messageText = "Email: ".$data->emailAddress.", Message: ".$data->messageBody;
+
+        $loader = new TemplateLoader();
+        $data = array(
+            "email" => $data->emailAddress,
+            "message_text" => $data->messageBody
+        );
+        $loader->loadTemplate('Blog/ContactNotification.html');
+        $messageText = $loader->render($data);
+        $altMessageText = "Email: ".$data['email'].", Message: ".$data['message_text'];
 
         $message = new BoatyBlogEmail(
             $addressArray,
             "New message via Boaty Blog",
             $messageText,
-            "hello"
+            $altMessageText
         );
 
         if($message->send()) {

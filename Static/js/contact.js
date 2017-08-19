@@ -18,7 +18,7 @@ document.getElementById("send_message").addEventListener("click", function() {
     } else {
         var message = Object();
         message.emailAddress = $("#email_input").val();
-        message.messageBody = $("#message_body").val();
+        message.messageBody = $("#message_body").val().replace(/\n/g, '<br>');
         var messageJson = JSON.stringify(message);
 
         $.post(
