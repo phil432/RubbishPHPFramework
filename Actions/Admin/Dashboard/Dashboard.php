@@ -29,6 +29,15 @@ class Dashboard {
         return $loader->render($data);
     }
 
+    static function loadBlogSettingsAction($uriArray) {
+        session_start();
+        checkIfLoggedInAndRedirectIfNot();
+        $loader = new TemplateLoader();
+        $loader->loadTemplate('/Admin/Dashboard/BlogSettings.html');
+        $data = array();
+        return $loader->render($data);
+    }
+
     static function loadBlogEditPanelWidget($uriArray) {
         session_start();
         checkIfLoggedInAndRedirectIfNot();
@@ -55,6 +64,15 @@ class Dashboard {
         checkIfLoggedInAndRedirectIfNot();
         $loader = new TemplateLoader();
         $loader->loadTemplate('/Admin/Dashboard/Components/BlogSearchPanel.html');
+        $data = array();
+        return $loader->render($data);
+    }
+
+    static function loadBackgroundImagePanel($uriArray) {
+        session_start();
+        checkIfLoggedInAndRedirectIfNot();
+        $loader = new TemplateLoader();
+        $loader->loadTemplate('/Admin/Dashboard/Components/BackgroundImageAdmin.html');
         $data = array();
         return $loader->render($data);
     }

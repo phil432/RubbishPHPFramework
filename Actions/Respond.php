@@ -47,11 +47,17 @@ class Respond {
             case LOAD_BLOG_EDIT_ACTION:
                 return Dashboard::loadBlogEditPanel($uriArray);
 
+            case LOAD_BLOG_SETTINGS_ACTION:
+                return Dashboard::loadBlogSettingsAction($uriArray);
+
             case LOAD_BLOG_EDIT_PANEL_ACTION:
                 return Dashboard::loadBlogEditPanelWidget($uriArray);
 
             case BLOG_SEARCH_PANEL_ACTION:
                 return Dashboard::loadBlogSearchPanel($uriArray);
+
+            case BACKGROUND_IMAGE_ADMIN:
+                return Dashboard::loadBackgroundImagePanel($uriArray);
 
             // All the static shit below
             case FETCH_GENERAL_STATIC_ACTION:

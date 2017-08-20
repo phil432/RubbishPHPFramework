@@ -16,15 +16,23 @@ $(document).ready(function() {
         $("#main_contents").load("dashboard/blog-edit");
     });
 
+    $("#site_settings_button").click(function() {
+        $("#main_contents").load("dashboard/blog-settings");
+    });
+
     // For the add new blog button
     $(document).on("click", "#add_new_button", function() {
-        loadBlogEditPanel();
+        EditPanel();
     });
 
     $(document).on("click", "#blog_search_panel_button", function() {
         $('#editing_panel').load("components/blog-search-panel");
         changePageIdentTag('BLOG_SEARCH');
     });
+
+    $(document).on("click", "#change_background", function () {
+        alert("herro");
+    })
 
     //For the user options button
     var isToggled = false;
@@ -61,6 +69,12 @@ function loadBlogEditPanel(post_id) {
         }
         changePageIdentTag('BLOG_EDIT');
     });
+}
+
+function loadBackgroundImagePanel() {
+    $("#editing_panel").load("components/background-image-admin", null, function() {
+        changePageIdentTag('BACKGROUND_IMAGE_ADMIN');
+    })
 }
 
 function changePageIdentTag(newIdentTag) {

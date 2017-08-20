@@ -36,3 +36,12 @@ CREATE TABLE IF NOT EXISTS user_password_reset (
     `user_id` INT NOT NULL,
     `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE IF NOT EXISTS blog_settings (
+    `background_image_id` INT
+);
+
+CREATE TABLE IF NOT EXISTS background_image (
+    `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `url` VARCHAR(200) NOT NULL
+);
