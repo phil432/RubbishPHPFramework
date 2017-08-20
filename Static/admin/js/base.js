@@ -31,7 +31,7 @@ $(document).ready(function() {
     });
 
     $(document).on("click", "#change_background", function () {
-        alert("herro");
+        loadBackgroundImagePanel();
     })
 
     //For the user options button
