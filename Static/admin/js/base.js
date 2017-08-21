@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     // For the add new blog button
     $(document).on("click", "#add_new_button", function() {
-        EditPanel();
+        loadBlogEditPanel();
     });
 
     $(document).on("click", "#blog_search_panel_button", function() {

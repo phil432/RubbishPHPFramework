@@ -1,0 +1,68 @@
+div#background_admin_panel {
+    width: 1500px;
+}
+
+div#background_admin_header {
+    width: 1490px;
+    background-color: #1BF507;
+    border: 1px solid black;
+    font-size: 50px;
+    padding-left: 10px;
+    min-height: 64px;
+}
+
+div#background_options {
+    width:1500px;
+    background-color: #1BF507;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+div.backround_option {
+    display: inline-block;
+    border-right: 1px solid black;
+    float: left;
+}
+
+div#background_list_container {
+    float: right;
+    margin-right:-2px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 290px;
+    height: 700px
+}
+
+div#background_list_header {
+    background-color: #96FF9A;
+    width: 280px;
+    padding-left: 10px;
+}
+
+div#background_list {
+
+}
+
+div.background_list_option {
+    border-bottom: 1px solid grey;
+    text-align: center;
+    font-family: ‘Courier New’, Courier, monospace;
+    color: black;
+}
+
+div.background_list_option:hover {
+    background-color: #80F576
+}
+
+div#background_preview {
+    display: block;
+    background-color: #e6ffe6;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 700px;
+    width: 1200px;
+}
