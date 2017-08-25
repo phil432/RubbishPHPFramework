@@ -19,7 +19,8 @@ $nodeArray[0][2][3] = makeNode("/^search-blogs$/", AJAX_ADMIN_SEARCH_BLOGS);
 $nodeArray[0][2][4] = makeNode("/^blog-media-upload$/", AJAX_ADMIN_BLOG_MEDIA_UPLOAD);
 $nodeArray[0][2][5] = makeNode("/^logout$/", AJAX_ADMIN_LOGOUT_ACTION);
 $nodeArray[0][2][6] = makeNode("/^password-reset-request$/", AJAX_ADMIN_PASSWORD_RESET);
-$nodeArray[0][2][7] = makeNode("/^set-new-password$/",AJAX_ADMIN_SET_NEW_PASSWORD);
+$nodeArray[0][2][7] = makeNode("/^set-new-password$/", AJAX_ADMIN_SET_NEW_PASSWORD);
+$nodeArray[0][2][8] = makeNode("/^background-image-upload$/", AJAX_ADMIN_BACKGROUND_IMAGE_UPLOAD);
 $nodeArray[0][3] = makeNode("/^components$/", null);
 $nodeArray[0][3][0] = makeNode("/^blog-edit-panel$/", LOAD_BLOG_EDIT_PANEL_ACTION);
 $nodeArray[0][3][1] = makeNode("/^blog-search-panel$/", BLOG_SEARCH_PANEL_ACTION);
@@ -36,6 +37,7 @@ $nodeArray[4] = makeNode("/^static-admin$/", FETCH_ADMIN_STATIC_ACTION, true);
 $nodeArray[5] = makeNode("/^static-admin-css$/", FETCH_ADMIN_CSS_ACTION, true);
 $nodeArray[6] = makeNode("/^static-admin-js$/", FETCH_ADMIN_JS_ACTION, true);
 $nodeArray[7] = makeNode("/^static-media-blogpost$/", FETCH_BLOGPOST_STATIC, true);
+$nodeArray[8] = makeNode("/^background-images-location$/", FETCH_BACKGROUND_IMAGES, true);
 
 $nodeArray[8] = makeNode("/^phpinfo$/", PHP_INFO);
 

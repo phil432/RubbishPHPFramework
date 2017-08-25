@@ -1,7 +1,7 @@
 <?php
 
-require_once __dir__.'/Classes/Database.php';
-require_once __dir__.'/Config.php';
+require_once __dir__.'/Database.php';
+require_once __dir__.'/../Config.php';
 
 class BackgroundImageAdmin {
 
@@ -12,7 +12,7 @@ class BackgroundImageAdmin {
     }
 
     function addNewBackgroundImage($url) {
-        $queryString = "INSERT INTO background_image (url) VAULES (?)";
+        $queryString = "INSERT INTO background_image (url) VALUES (?)";
         $this->connection->query($queryString, array($url));
         return $this->connection->lastInsertId();
     }

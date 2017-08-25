@@ -15,6 +15,7 @@ require_once __dir__.'/Admin/Ajax/UploadBlogMedia.php';
 require_once __dir__.'/Admin/Ajax/Logout.php';
 require_once __dir__.'/Admin/Ajax/PasswordResetAction.php';
 require_once __dir__.'/Admin/Ajax/SetNewPassword.php';
+require_once __dir__.'/Admin/Ajax/AddNewBackgroundImage.php';
 require_once __dir__.'/Test/TestAction.php';
 require_once __dir__.'/Blog/HomePageAction.php';
 require_once __dir__.'/Blog/CoverPageAction.php';
@@ -81,6 +82,9 @@ class Respond {
             case FETCH_BLOGPOST_STATIC:
                 return FetchStaticActions::fetchBlogPostStatic($uriArray);
 
+            case FETCH_BACKGROUND_IMAGES:
+                return FetchStaticActions::fetchBackgoundImageStatic($uriArray);
+
             // Admin AJAX actions
             case AJAX_ADMIN_AUTH_USER_ACTION:
                 return AuthoriseAdminUser::go();
@@ -105,6 +109,9 @@ class Respond {
 
             case AJAX_ADMIN_SET_NEW_PASSWORD:
                 return SetNewPassword::go();
+
+            case AJAX_ADMIN_BACKGROUND_IMAGE_UPLOAD:
+                return AddNewBackgroundImage::go();
 
             case TEST_ACTION:
                 return TestAction::go($uriArray);

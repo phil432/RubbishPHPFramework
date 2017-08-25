@@ -35,6 +35,10 @@ class FetchStaticActions {
         return self::resolveStaticPathAndFetch($GLOBALS['BLOG_POST_MEDIA_DIR'], $uriArray);
     }
 
+    static function fetchBackgoundImageStatic($uriArray) {
+        return self::resolveStaticPathAndFetch($GLOBALS['BACKGROUND_IMAGES_LOCATION'], $uriArray);
+    }
+
     static function resolveStaticPathAndFetch($staticDirPath, $uriArray) {
         $uriArray = unsetAndRebase($uriArray, 0);
         $staticString = @file_get_contents($staticDirPath.reconstructPathFromArray($uriArray));
