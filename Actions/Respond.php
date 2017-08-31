@@ -16,6 +16,7 @@ require_once __dir__.'/Admin/Ajax/Logout.php';
 require_once __dir__.'/Admin/Ajax/PasswordResetAction.php';
 require_once __dir__.'/Admin/Ajax/SetNewPassword.php';
 require_once __dir__.'/Admin/Ajax/AddNewBackgroundImage.php';
+require_once __dir__.'/Admin/Ajax/FetchAllBackgrounds.php';
 require_once __dir__.'/Test/TestAction.php';
 require_once __dir__.'/Blog/HomePageAction.php';
 require_once __dir__.'/Blog/CoverPageAction.php';
@@ -113,8 +114,8 @@ class Respond {
             case AJAX_ADMIN_BACKGROUND_IMAGE_UPLOAD:
                 return AddNewBackgroundImage::go();
 
-            case TEST_ACTION:
-                return TestAction::go($uriArray);
+            case AJAX_ADMIN_FETCH_ALL_BACKGROUNDS:
+                return FetchAllBackgrounds::go();
 
             // All the actual blog shit here
             case FETCH_HOME_PAGE:

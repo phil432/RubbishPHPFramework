@@ -53,16 +53,22 @@ div.background_list_option {
     color: black;
 }
 
-div.background_list_option:hover {
-    background-color: #80F576
-}
-
 div#background_preview {
     display: block;
     background-color: #e6ffe6;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     height: 700px;
     width: 1200px;
+}
+
+.background_selected {
+    background-color: red;
+}
+
+.background_not_selected:hover {
+    background-color: #80F576
 }

@@ -21,6 +21,7 @@ $nodeArray[0][2][5] = makeNode("/^logout$/", AJAX_ADMIN_LOGOUT_ACTION);
 $nodeArray[0][2][6] = makeNode("/^password-reset-request$/", AJAX_ADMIN_PASSWORD_RESET);
 $nodeArray[0][2][7] = makeNode("/^set-new-password$/", AJAX_ADMIN_SET_NEW_PASSWORD);
 $nodeArray[0][2][8] = makeNode("/^background-image-upload$/", AJAX_ADMIN_BACKGROUND_IMAGE_UPLOAD);
+$nodeArray[0][2][9] = makeNode("/^fetch-all-backgrounds$/", AJAX_ADMIN_FETCH_ALL_BACKGROUNDS);
 $nodeArray[0][3] = makeNode("/^components$/", null);
 $nodeArray[0][3][0] = makeNode("/^blog-edit-panel$/", LOAD_BLOG_EDIT_PANEL_ACTION);
 $nodeArray[0][3][1] = makeNode("/^blog-search-panel$/", BLOG_SEARCH_PANEL_ACTION);
@@ -39,7 +40,6 @@ $nodeArray[6] = makeNode("/^static-admin-js$/", FETCH_ADMIN_JS_ACTION, true);
 $nodeArray[7] = makeNode("/^static-media-blogpost$/", FETCH_BLOGPOST_STATIC, true);
 $nodeArray[8] = makeNode("/^background-images-location$/", FETCH_BACKGROUND_IMAGES, true);
 
-$nodeArray[8] = makeNode("/^phpinfo$/", PHP_INFO);
 
 $nodeArray[9] = makeNode("/^home$/", FETCH_HOME_PAGE);
 $nodeArray[10] = makeNode("/^$/", FETCH_COVER_PAGE);

@@ -15,9 +15,9 @@ class AddNewBackgroundImage {
         $file = $_FILES['upload_file'];
 
         try {
-            move_uploaded_file($file['tmp_name'], $GLOBALS['BACKGROUND_IMAGES_LOCATION'].'/'.$file['name'].'.'.pathinfo($file['name'], PATHINFO_EXTENSION));
+            move_uploaded_file($file['tmp_name'], $GLOBALS['BACKGROUND_IMAGES_LOCATION'].'/'.$file['name']);
             $backgroundImageAdmin = new BackgroundImageAdmin();
-            $backgroundImageAdmin->AddNewBackgroundImage("background-images-location/".$file['name']);
+            $backgroundImageAdmin->AddNewBackgroundImage("/background-images-location/".$file['name']);
             return json_encode(static::SUCCESS);
         } catch(Exception $e) {
             // Do nothing

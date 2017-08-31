@@ -74,6 +74,7 @@ function loadBlogEditPanel(post_id) {
 function loadBackgroundImagePanel() {
     $("#editing_panel").load("components/background-image-admin", null, function() {
         changePageIdentTag('BACKGROUND_IMAGE_ADMIN');
+        fetchAllBackgrounds();
     })
 }
 
@@ -88,6 +89,10 @@ function changePageIdentTag(newIdentTag) {
     if (newIdentTag == 'BLOG_EDIT') {
         startBlogEditProcesses();
     }
+}
+
+function getPageIdent() {
+    return $('#page_ident_tag').text();
 }
 
 function parseDate(date, format) {
