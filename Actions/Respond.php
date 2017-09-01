@@ -15,8 +15,7 @@ require_once __dir__.'/Admin/Ajax/UploadBlogMedia.php';
 require_once __dir__.'/Admin/Ajax/Logout.php';
 require_once __dir__.'/Admin/Ajax/PasswordResetAction.php';
 require_once __dir__.'/Admin/Ajax/SetNewPassword.php';
-require_once __dir__.'/Admin/Ajax/AddNewBackgroundImage.php';
-require_once __dir__.'/Admin/Ajax/FetchAllBackgrounds.php';
+require_once __dir__.'/Admin/Ajax/BackgroundImageOperations.php';
 require_once __dir__.'/Test/TestAction.php';
 require_once __dir__.'/Blog/HomePageAction.php';
 require_once __dir__.'/Blog/CoverPageAction.php';
@@ -86,6 +85,9 @@ class Respond {
             case FETCH_BACKGROUND_IMAGES:
                 return FetchStaticActions::fetchBackgoundImageStatic($uriArray);
 
+            case FETCH_CURRENT_BACKGROUND:
+                return FetchStaticActions::fetchCurrentBackground();
+
             // Admin AJAX actions
             case AJAX_ADMIN_AUTH_USER_ACTION:
                 return AuthoriseAdminUser::go();
@@ -112,10 +114,19 @@ class Respond {
                 return SetNewPassword::go();
 
             case AJAX_ADMIN_BACKGROUND_IMAGE_UPLOAD:
-                return AddNewBackgroundImage::go();
+                return BackgroundImageOperations::addNewBackgroundImage();
 
             case AJAX_ADMIN_FETCH_ALL_BACKGROUNDS:
-                return FetchAllBackgrounds::go();
+                return BackgroundImageOperations::fetchAllBackgrounds();
+
+            case AJAX_ADMIN_DELETE_BACKGROUND:
+                return BackgroundImageOperations::deleteBackgroundImage();
+
+            case AJAX_ADMIN_GET_CURRENT_BACKGROUND_ID:
+                return BackgroundImageOperations::fetchCurrentBackgroundImageId();
+
+            case AJAX_ADMIN_SET_CURRENT_BACKGROUND:
+                return BackgroundImageOperations::setCurrentBackgound();
 
             // All the actual blog shit here
             case FETCH_HOME_PAGE:

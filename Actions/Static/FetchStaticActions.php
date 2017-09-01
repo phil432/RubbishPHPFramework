@@ -55,6 +55,8 @@ class FetchStaticActions {
     }
 
     static function setHeadersAccordingToFile($filename) {
+        header("Content-Length: " . filesize($filename));
+
         // fetch extension from filename
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
 
@@ -72,6 +74,14 @@ class FetchStaticActions {
             header('Content-Type: image/png');
         }
 
+    }
+
+    static function fetchCurrentBackground() {
+        $files = scandir($GLOBALS['CURRENT_BACKGROUND_IMAGE_LOCATION']);
+        $file = $files[2];
+
+        self::setHeadersAccordingToFile($file);
+        header("Location: "."/static/Media/BlogImages/CoverPage/Current/".$file);
     }
 
 }

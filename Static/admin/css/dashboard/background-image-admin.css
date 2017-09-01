@@ -65,6 +65,14 @@ div#background_preview {
     width: 1200px;
 }
 
+.background_id {
+    display: inline-block;
+}
+
+.is_current {
+    display: inline-block;
+}
+
 .background_selected {
     background-color: red;
 }

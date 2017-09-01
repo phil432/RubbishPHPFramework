@@ -22,6 +22,9 @@ $nodeArray[0][2][6] = makeNode("/^password-reset-request$/", AJAX_ADMIN_PASSWORD
 $nodeArray[0][2][7] = makeNode("/^set-new-password$/", AJAX_ADMIN_SET_NEW_PASSWORD);
 $nodeArray[0][2][8] = makeNode("/^background-image-upload$/", AJAX_ADMIN_BACKGROUND_IMAGE_UPLOAD);
 $nodeArray[0][2][9] = makeNode("/^fetch-all-backgrounds$/", AJAX_ADMIN_FETCH_ALL_BACKGROUNDS);
+$nodeArray[0][2][10] = makeNode("/^delete-background$/", AJAX_ADMIN_DELETE_BACKGROUND);
+$nodeArray[0][2][11] = makeNode("/^get-current-background-id$/", AJAX_ADMIN_GET_CURRENT_BACKGROUND_ID);
+$nodeArray[0][2][12] = makeNode("/^set-current-background$/", AJAX_ADMIN_SET_CURRENT_BACKGROUND);
 $nodeArray[0][3] = makeNode("/^components$/", null);
 $nodeArray[0][3][0] = makeNode("/^blog-edit-panel$/", LOAD_BLOG_EDIT_PANEL_ACTION);
 $nodeArray[0][3][1] = makeNode("/^blog-search-panel$/", BLOG_SEARCH_PANEL_ACTION);
@@ -39,16 +42,17 @@ $nodeArray[5] = makeNode("/^static-admin-css$/", FETCH_ADMIN_CSS_ACTION, true);
 $nodeArray[6] = makeNode("/^static-admin-js$/", FETCH_ADMIN_JS_ACTION, true);
 $nodeArray[7] = makeNode("/^static-media-blogpost$/", FETCH_BLOGPOST_STATIC, true);
 $nodeArray[8] = makeNode("/^background-images-location$/", FETCH_BACKGROUND_IMAGES, true);
+$nodeArray[9] = makeNode("/^background-image$/", FETCH_CURRENT_BACKGROUND);
 
 
-$nodeArray[9] = makeNode("/^home$/", FETCH_HOME_PAGE);
-$nodeArray[10] = makeNode("/^$/", FETCH_COVER_PAGE);
-$nodeArray[11] = makeNode("/^article$/", FETCH_ARTICLE_NOT_FOUND);
-$nodeArray[11][0] = makeNode("/^[0-9]{1,3}$/", FETCH_ARTICLE_PAGE_BY_ID);
-$nodeArray[11][1] = makeNode("/^[a-zA-Z0-9\-]{4,100}$/", FETCH_ARTICLE_PAGE_BY_SLUG);
-$nodeArray[12] = makeNode("/^contact$/", FETCH_CONTACT_PAGE);
-$nodeArray[13] = makeNode("/^ajax$/", null);
-$nodeArray[13][0] = makeNode("/^contact-form$/", CONTACT_FORM_ACTION);
+$nodeArray[10] = makeNode("/^home$/", FETCH_HOME_PAGE);
+$nodeArray[11] = makeNode("/^$/", FETCH_COVER_PAGE);
+$nodeArray[12] = makeNode("/^article$/", FETCH_ARTICLE_NOT_FOUND);
+$nodeArray[13][0] = makeNode("/^[0-9]{1,3}$/", FETCH_ARTICLE_PAGE_BY_ID);
+$nodeArray[14][1] = makeNode("/^[a-zA-Z0-9\-]{4,100}$/", FETCH_ARTICLE_PAGE_BY_SLUG);
+$nodeArray[15] = makeNode("/^contact$/", FETCH_CONTACT_PAGE);
+$nodeArray[16] = makeNode("/^ajax$/", null);
+$nodeArray[17][0] = makeNode("/^contact-form$/", CONTACT_FORM_ACTION);
 //Put the test action in
 //$nodeArray[2] = makeNode("/^test-action$/", TEST_ACTION);
 
