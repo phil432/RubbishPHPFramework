@@ -83,9 +83,10 @@ class SearchQuery {
             $paramsArray[] = $this->formatDateToDatabase($this->publishedFrom);
         }
         if ($this->publishedTo) {
-            $searchSQL .= "AND posted < ?";
+            $searchSQL .= "AND posted < ? ";
             $paramsArray[] = $this->formatDateToDatabase($this->publishedTo);
         }
+        $searchSQL .= "ORDER BY created";
         $result = $this->dbConnection->query($searchSQL, $paramsArray);
         return $result;
     }
