@@ -48,11 +48,11 @@ $nodeArray[9] = makeNode("/^background-image$/", FETCH_CURRENT_BACKGROUND);
 $nodeArray[10] = makeNode("/^home$/", FETCH_HOME_PAGE);
 $nodeArray[11] = makeNode("/^$/", FETCH_COVER_PAGE);
 $nodeArray[12] = makeNode("/^article$/", FETCH_ARTICLE_NOT_FOUND);
-$nodeArray[13][0] = makeNode("/^[0-9]{1,3}$/", FETCH_ARTICLE_PAGE_BY_ID);
-$nodeArray[14][1] = makeNode("/^[a-zA-Z0-9\-]{4,100}$/", FETCH_ARTICLE_PAGE_BY_SLUG);
-$nodeArray[15] = makeNode("/^contact$/", FETCH_CONTACT_PAGE);
-$nodeArray[16] = makeNode("/^ajax$/", null);
-$nodeArray[17][0] = makeNode("/^contact-form$/", CONTACT_FORM_ACTION);
+$nodeArray[12][0] = makeNode("/^[0-9]{1,3}$/", FETCH_ARTICLE_PAGE_BY_ID);
+$nodeArray[12][1] = makeNode("/^[a-zA-Z0-9\-]{4,100}$/", FETCH_ARTICLE_PAGE_BY_SLUG);
+$nodeArray[13] = makeNode("/^contact$/", FETCH_CONTACT_PAGE);
+$nodeArray[14] = makeNode("/^ajax$/", null);
+$nodeArray[14][0] = makeNode("/^contact-form$/", CONTACT_FORM_ACTION);
 //Put the test action in
 //$nodeArray[2] = makeNode("/^test-action$/", TEST_ACTION);
 

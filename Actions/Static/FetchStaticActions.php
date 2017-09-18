@@ -39,23 +39,26 @@ class FetchStaticActions {
         return self::resolveStaticPathAndFetch($GLOBALS['BACKGROUND_IMAGES_LOCATION'], $uriArray);
     }
 
-    static function resolveStaticPathAndFetch($staticDirPath, $uriArray) {
+    static function resolveStaticPathAndFetch($staticDirPath, $uriArray)
+    {
         $uriArray = unsetAndRebase($uriArray, 0);
-        $staticString = @file_get_contents($staticDirPath.reconstructPathFromArray($uriArray));
+        $pathToFile = $staticDirPath.reconstructPathFromArray($uriArray);
+        $staticString = @file_get_contents($pathToFile);
         if(!$staticString) {
             $staticString = $staticDirPath.reconstructPathFromArray($uriArray);
         }
 
         else {
             $fileName = array_values(array_slice($uriArray, -1))[0];
-            self::setHeadersAccordingToFile($fileName);
+            self::setHeadersAccordingToFile($fileName, $pathToFile);
         }
 
         return $staticString;
     }
 
-    static function setHeadersAccordingToFile($filename) {
-        header("Content-Length: " . filesize($filename));
+    static function setHeadersAccordingToFile($filename, $pathToFile)
+    {
+        header("Content-Length: " . filesize($pathToFile));
 
         // fetch extension from filename
         $ext = pathinfo($filename, PATHINFO_EXTENSION);

@@ -64,7 +64,8 @@ class Db {
                 INNER JOIN blog_post_text
                 ON blog_post.blog_text_id = blog_post_text.id
                 WHERE published = 1
-                AND posted NOT LIKE ''";
+                AND posted NOT LIKE ''
+                ORDER BY posted";
         return $this->connection->query($query, array());
     }
 

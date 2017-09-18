@@ -1,6 +1,9 @@
 body {
-    background-image: url("/static/Media/BlogImages/CoverPage/IMAG0397.jpg");
+    background: url("/background-image") no-repeat center center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Times New Roman", Times, serif;
